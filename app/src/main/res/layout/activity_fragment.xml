@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hansung.uniton_project.Fragment.FragmentActivity">
+
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:id="@+id/inner_relative_layout"
+        android:background="#f1f1f1"
+        >
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.hansung.uniton_project.Fragment.AFragment"
+        android:layout_toRightOf="@+id/inner_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="253dp"
+        />
+</RelativeLayout>

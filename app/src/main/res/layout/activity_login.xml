@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_gradation"
+    >
+
+    <EditText
+        android:id="@+id/edit_text_account_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="154dp"
+        android:ems="10"
+        android:hint="이메일"
+        android:inputType="textEmailAddress|textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:backgroundTint="#ffffff"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_password_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_text_account_login"
+        android:layout_alignStart="@+id/edit_text_account_login"
+        android:layout_below="@+id/edit_text_account_login"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="패스워드"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffffff"
+        android:backgroundTint="#ffffff"
+        />
+
+    <TextView
+        android:id="@+id/register_button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원이 아니신가요?"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/edit_text_password_login"
+        android:layout_alignEnd="@+id/edit_text_password_login" />
+
+    <TextView
+        android:id="@+id/login_button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="LOGIN"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/edit_text_password_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp" />
+</RelativeLayout>
